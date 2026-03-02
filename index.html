@@ -57,8 +57,8 @@
         <h1 class="title">Esame Istruttore</h1>
         <p style="color: var(--text-muted); margin-bottom: 50px;">Scegli la modalità di simulazione</p>
         
-        <button class="btn-success" style="width: 100%; margin-bottom: 20px;" onclick="startQuiz(40)">
-            ESAME COMPLETO<br><span style="font-size: 13px; font-weight: normal;">40 Domande</span>
+        <button class="btn-success" style="width: 100%; margin-bottom: 20px;" onclick="startQuiz(50)">
+            ESAME COMPLETO<br><span style="font-size: 13px; font-weight: normal;">50 Domande</span>
         </button>
         
         <button class="btn-primary" style="width: 100%; margin-bottom: 20px;" onclick="startQuiz(10)">
@@ -97,7 +97,7 @@
         let currentQuiz =[];
         let currentIndex = 0;
         let userAnswers = {}; 
-        let totalQuestions = 40; // Variabile dinamica
+        let totalQuestions = 50; // Variabile dinamica
 
         // Carica il JSON locale
         fetch('domande.json')
